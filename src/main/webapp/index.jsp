@@ -3,13 +3,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib  uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>  
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-
-
+<link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <%! 
@@ -41,14 +39,14 @@
  	
  	
  	
- 	<h1>Atividade: Criar uma página JSP que contenha a utilização de JSTL </h1>	
+ 	<h1 class="text-success">Atividade: Criar uma página JSP que contenha a utilização de JSTL </h1>	
  	<p>. C:OUT<p>
  	<P>. C:IF<p>
  	<P>. C:choose<p>
  	<p>. C:set<p>
  	<p>. E alguma outra não mostrada em aula da sua escolha<p>
  
-	<h3>Vou informar se o valor 5 é maior que o valor 7</h3>
+	<h3 class="text-danger">Vou informar se o valor 5 é maior que o valor 7</h3>
 
 		<c:set var="menor" value= "5"/>
 		<c:set var="maior" value= "7"/>
@@ -58,7 +56,7 @@
 		 	<p>O valor: <c:out value="${menor}"/> é menor que o valor: <c:out value="${maior}"/> <p>
 		</c:if>
 		
-		<h3> Agora vamos contar até 5</h3>
+		<h3 class="text-danger"> Agora vamos contar até 5</h3>
 
 		<c:choose>
 			<c:when test="${menor < maior}">
@@ -68,7 +66,6 @@
 	    	</c:when>
 		</c:choose>
 		
-		<
 		
 
 </body>
